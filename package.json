@@ -1,0 +1,15 @@
+{
+  "name": "projeto-sass",
+  "version": "1.0.0",
+  "scripts": {
+    "sass": "sass main.scss styles/main.css --style compressed --no-source-map",
+    "sass:watch": "sass --watch main.scss styles/main.css --no-source-map",
+    "build": "sass main.scss styles/main.css --no-source-map && postcss styles/main.css --use cssnano --output styles/main.css"
+  },
+  "devDependencies": {
+    "sass": "^1.70.0",
+    "postcss-cli": "^10.1.0",
+    "cssnano": "^6.0.1",
+    "postcss-modules": "^4.0.0"
+  }
+}
